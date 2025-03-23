@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncr - grace's portfolio</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Ramaraja&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Bouncr specific styles */
+    .bouncr-underline {
+      text-decoration-color: #252387;
+    }
+
+    .work-page-header {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .work-page-info-row {
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: flex-start;
+      gap: 2rem;
+      border-top: 1px solid var(--primary-text);
+      border-bottom: 1px solid var(--primary-text);
+    }
+
+    .work-page-overview {
+      padding: 3rem;
+    }
+
+    .work-page-skills-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 0 3rem 3rem 3rem;
+    }
+
+    .work-page-skills-boxes {
+      margin-top: 1rem;
+    }
+
+    .internship-intro {
+      padding: 0 3rem;
+    }
+
+    .right-text {
+      margin-left: auto;
+      text-align: right;
+      max-width: 70%;
+    }
+
+    .bouncr-right {
+      border-right: 5px solid #252387;
+      padding-right: 1rem;
+    }
+
+    .work-page-section-title {
+      margin: 3rem 0 1.5rem 3rem;
+    }
+
+    .section-text {
+      padding: 0 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .work-gallery {
+      width: 90%;
+      max-width: 800px;
+      margin: 2rem auto;
+      display: block;
+    }
+
+    #user-testing-bouncr ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    #user-testing-bouncr ul ul {
+      margin-top: 0.5rem;
+    }
+
+    .up-next-section {
+      margin-top: 3rem;
+    }
+
+    .up-next {
+      display: block;
+    }
+
+    .up-next-label-gradient {
+      background: linear-gradient(to right, #ff5470, #ff9776);
+      padding: 2px;
+      border-radius: 5px 5px 0 0;
+      width: fit-content;
+    }
+
+    .up-next-label {
+      background-color: var(--primary-bg);
+      border-radius: 3px 3px 0 0;
+      padding: 0.5rem 1rem;
+    }
+
+    .up-next-text {
+      font-size: 1rem;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .up-next-card-gradient {
+      background: linear-gradient(to right, #ff5470, #ff9776);
+      padding: 5px;
+      border-radius: 0 5px 5px 5px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .up-next-card {
+      background-color: var(--primary-bg);
+      border-radius: 0 3px 3px 3px;
+      padding: 1.5rem;
+    }
+
+    .up-next-title {
+      margin-bottom: 0.5rem;
+    }
+
+    .mobile {
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .work-page-info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .right-text {
+        max-width: 100%;
+        text-align: left;
+        margin-left: 0;
+      }
+
+      .bouncr-right {
+        border-right: none;
+        border-left: 5px solid #252387;
+        padding-right: 0;
+        padding-left: 1rem;
+      }
+
+      .work-page-section-title {
+        margin-left: 1.5rem;
+      }
+
+      .section-text {
+        padding: 0 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="topbar">
+    <h1 id="nameplate"><a href="index.html">grace joseph</a></h1>
+    <nav id="navbar">
+      <ul>
+        <li><h2><a href="index.html#work-section">work</a></h2></li>
+        <li><h2><a href="index.html#skills-section">skills</a></h2></li>
+        <li><h2><a href="index.html#about-section">about</a></h2></li>
+        <li><h2><a href="assets/grace joseph portfolio resume 2021.pdf" download="resume" target="_blank">resume</a></h2></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="work-page-content">
+    <div data-scroll="in" class="work-page-header">
+      <h1 class="work-page-header-title">Bouncr</h1>
+      <h3 class="up-next-role">Innovation / Mobile App Design + Development</h3>
+    </div>
+    <div data-scroll="in" class="work-page-info-row skills-grey-boxes">
+      <h4><strong>DURATION: </strong>September 2021 - Present</h4>
+      <h4><strong>PLATFORM: </strong>iOS</h4>
+      <h4><strong>COLLABORATORS: </strong>Sara Song, Kenny Hu, Shane Aung</h4>
+    </div>
+    <div data-scroll="in" class="work-page-overview">
+      <h4 class="work-page-overview-content">
+        In the fall of 2021, I took the course Mobile Application Design and Development, which is sponsored by Capital One and consists
+        of students forming groups to develop an app of their own design over 15 weeks (6 sprints).
+        It includes a contest and cash prize with each team having to give a 15 minute pitch, a demo,
+        and a promo video of their app to Faculty and Sponsors.
+        My team <span class="underline bouncr-underline">built an app that streamlines the event
+          management process called Bouncr</span> by providing a platform to create events, keep track of invitations,
+          and check-in guests at the door. <span class="underline bouncr-underline">Capital One awarded our app the first prize</span> among all 19 teams.
+      </h4>
+    </div>
+    <div class="work-page-skills-main">
+      <div data-scroll="in" class="work-page-skills">
+        <h2>Methods</h2>
+        <div class="skills-grey-boxes work-page-skills-boxes">
+          <h4>Agile Methodology</h4>
+          <h4>API Design</h4>
+          <h4>Full-Stack Development</h4>
+          <h4>User Testing</h4>
+          <h4>Surveying</h4>
+          <h4>Semi-structured Interviews</h4>
+          <h4>Wireframing</h4>
+          <h4>Prototyping</h4>
+        </div>
+      </div>
+      <div data-scroll="in" class="work-page-skills">
+        <h2>Tools</h2>
+        <div class="skills-grey-boxes work-page-skills-boxes">
+          <h4>Figma</h4>
+          <h4>XCode</h4>
+          <h4>SwiftUI</h4>
+          <h4>Firebase</h4>
+          <h4>iMovie</h4>
+          <h4>Trello</h4>
+          <h4>Github</h4>
+        </div>
+      </div>
+    </div>
+    <div class="internship-intro">
+      <h4 class="section-text bouncr-right right-text">
+        Our app is an event access management tool that allows users to either create an event with a specified guest list or easily gain access to events where they are invited. Hosts can generate exclusivity with their events by sending tickets to their guestlist and those guests can easily get into the event by using the QR code that comes with their ticket. As guests arrive, the app provides statistics to guests about how many people are invited, which of their friends have already checked in to the event, and how many people are at the event of those invited.
+      </h4>
+    </div>
+    <div>
+      <h2 class="work-page-section-title underline bouncr-underline">Sprint 1: Ideation</h2>
+      <h4 class="section-text bouncr-right right-text">
+        For college students especially, hosting an event can be tumultuous and
+        unpredictable in terms of making sure only those specifically invited are let in.
+        Events can get out of control and are difficult to manage when more people show up than
+        anticipated, which is especially concerning in the aftermath of the pandemic. The person
+        responsible for making sure only those invited can enter the event often doesn't know
+        everyone invited personally and likely feels awkward turning people away.
+        With this app, all it takes is QR codes to verify that the attendee is invited
+        and the host(s) can track and publish a real-time number of attendees who have
+        checked in. From an attendee perspective, this app also facilitates the process
+        of attending events by making it easy to receive invitations, respond to them,
+        and then attend the event. Additionally, if both parties permit, each attendee
+        can see which of their friends from the app have been invited to a given event
+        and see if they have arrived, helping them decide whether or not they want to go to the event.
+      </h4>
+    </div>
+    <div class="work-page-section app-section">
+      <h2 class="work-page-section-title underline bouncr-underline">Sprint 2: User Experience</h2>
+      <img class="work-gallery mobile" src="https://ext.same-assets.com/1155604436/2315348938.png">
+      <div data-scroll="in" class="section-text bouncr-right right-text" id="user-testing-bouncr">
+        <h4><strong>User Testing Insights:</strong></h4>
+      <ul>
+        <li><h4>Most of our users use standard digital means like emails, google calendar invites and messaging apps to invite guests.</h4>
+          <ul><li><h4>These modes of invitation do not allow for easy event checking, creating a pain point for our app to address.</h4></li></ul>
+        </li>
+        <li><h4>A common way for hosts to verify if a guest was invited is to ask for their name and look for it on the invite list, a google sheet, with the search function.</h4>
+          <ul><li><h4>Our QR code will provide a faster and more secure check in process.</h4></li></ul>
+        </li>
+        <li><h4>One of the users felt more could be done to highlight the event that is currently occurring to help the host easily find the button to scan invites.</h4>
+        </li>
+        <li><h4>One of the users pointed out that the current design of the guest list and friends attending display will not work well for user lists of more than 10 users.</h4>
+          <ul><li><h4>This feedback identified a design flaw and the user list design will be changed accordingly to possibly include sorts and filters to accommodate long user lists.</h4></li></ul>
+        </li>
+      </ul>
+      </div>
+      <img class="work-gallery mobile" src="https://ext.same-assets.com/1155604436/1701400559.png">
+    </div>
+    <div>
+      <h2 class="work-page-section-title underline bouncr-underline">Sprint 3: API & Prototyping</h2>
+      <h4 class="section-text bouncr-right right-text">
+        For college students especially, hosting an event can be tumultuous and
+        unpredictable in terms of making sure only those specifically invited are let in.
+        Events can get out of control and are difficult to manage when more people show up than
+        anticipated, which is especially concerning in the aftermath of the pandemic. The person
+        responsible for making sure only those invited can enter the event often doesn't know
+        everyone invited personally and likely feels awkward turning people away.
+        With this app, all it takes is QR codes to verify that the attendee is invited
+        and the host(s) can track and publish a real-time number of attendees who have
+        checked in. From an attendee perspective, this app also facilitates the process
+        of attending events by making it easy to receive invitations, respond to them,
+        and then attend the event. Additionally, if both parties permit, each attendee
+        can see which of their friends from the app have been invited to a given event
+        and see if they have arrived, helping them decide whether or not they want to go to the event.
+      </h4>
+      <img class="work-gallery mobile" src="https://ext.same-assets.com/1155604436/1408381167.png">
+    </div>
+    <div>
+      <h2 class="work-page-section-title underline bouncr-underline">Sprint 4: Version 1 of the App</h2>
+      <h4 class="section-text bouncr-right right-text">
+        For our first version, we focused on developing the attendee and host views and streamlining the checkin process by automatically creating invite cards that contain a QR code that can be scanned to update the attendance. The only features we held off implementing for V2 were the friend requests and friend related statistics associated with an event. Beyond that we also left many superficial changes for version 2.
+      </h4>
+    </div>
+    <div>
+      <h2 class="work-page-section-title underline bouncr-underline">Sprint 5: User Testing of V1</h2>
+      <h4 class="section-text bouncr-right right-text">
+        After conducting user tests with 6 potential end-users, we were able to not only understand how navigable our app is in its current state of progress, but also locate numerous UI bugs that we can fix in order to enhance the current user experience. While most users found it quite easy to navigate to the different pages and index their own events and invites, the microinteractions / gestures associated with performing smaller actions within each tab turned out to be difficult at times. For instance, many users thought that tapping a second time to switch back from spread out invite cards to stacked invite cards was not intuitive. Additionally, many users were concerned about the lack of confirmation associated with editing and deleting events as well as throughout the entire scanning process, suggesting that they need continuous feedback throughout their interactions with the app.
+      </h4>
+      <h4 class="section-text bouncr-right right-text">
+        While designing our app in the earlier sprints, we tried to build off of existing mental models by incorporating UI elements and features similar to commonly used apps, like Apple Wallet, Google Calendar, Venmo, etc. Throughout our testing, it was clear that these design choices came across to users in both positive and negative lights. While many users were pleased with how we included wallet-like stacked cards and google-esque floating buttons, some users found switching between the invitation stack configurations less intuitive and the concept of "friends" and "friending" in the context of our app — something traditionally seen in social media platforms — as played out and yet another barrier in the way of usability.
+      </h4>
+    </div>
+    <div>
+      <h2 class="work-page-section-title underline bouncr-underline">Sprint 6: Version 2 of the App</h2>
+      <h4 class="section-text bouncr-right right-text">
+        We're really grateful to have won the 67443 Mobile App Competition! Below are the poster and promo video we had to make for the university-wide fair where the competition winners were announced.
+      </h4>
+      <img class="work-gallery mobile" src="https://ext.same-assets.com/1155604436/3214161615.png">
+    </div>
+  </main>
+  <footer data-scroll="out" class="up-next-section">
+    <a class="up-next" href="figmalite.html">
+      <div class="up-next-label-gradient figmalite-gradient">
+        <div class="up-next-label">
+          <h2 class="up-next-text">up next</h2>
+        </div>
+      </div>
+      <div class="up-next-card-gradient figmalite-gradient">
+        <div class="up-next-card">
+          <h1 class="up-next-title">FigmaLite</h1>
+          <h3 class="up-next-role">Ideation / UI/UX Design + Front-End Development</h3>
+        </div>
+      </div>
+    </a>
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
